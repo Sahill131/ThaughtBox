@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body{
+    background-color: #111;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    margin-top: 50px;
+}
+
+form{
+    margin-top: 50px;
+    gap:20px
+
+}
+
+.width{width: 500px;
+border: 1px solid white;
+border-radius: 10px;}
+
+input{
+    background-color: transparent;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid white;
+   
+
+}
+
+.logout{
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    margin-left: 90%;
+    margin-top: 10px;
+    border: none;
+}
+
+.post{
+    border-radius: 10px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+}
+input:focus{
+    border: transparent;
+}
+
+.left{
+    margin-left: 40px;
+}
+
+.box{
+    width: 500px;
+    border: 2px solid rgba(255, 255, 255, 0.405);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.usern{
+    color: royalblue;
+    font-size: 20px;
+}
+.p{
+    margin-top: 10px;
+    font-size: 12px;
+}
+.no{
+    color: rgba(255, 255, 255, 0.597);
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+a{
+    text-decoration: no;
+    color: white;
+    font-size: 12px;
+    
+}
+
+.edit{
+    color: rgba(255, 255, 255, 0.597); 
+}
+
+.gapppp{
+    column-gap: 80px;
+}

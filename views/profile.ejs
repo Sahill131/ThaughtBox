@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+
+<body>
+  <input type="submit" value="Log out" class="logout">
+
+
+  <div class="left">
+    <h1> Hii <%= user.name %> 👋</h1>
+
+    <form action="/post" method="post">
+
+
+      <input type="text" placeholder="Whats's In Your Mind ?" name="content" class="width"> <br><br><br>
+
+
+
+      <input type="submit" value="Post" class="post">
+
+    </form>
+
+
+  </div>
+
+
+  <% if (user.posts.reverse() && user.posts.length> 0) { %>
+
+    <% user.posts.forEach(function(post) { %>
+      <div class="postt">
+        <div class="box">
+
+          <h2 class="usern">
+            <%= user.username %>
+          </h2>
+
+          <p class="p">
+            <%= post.content %>
+          </p> <br>
+          <div class="flex gapppp">
+            <a href="">Like</a>
+            <a href="" class="edit">Edit</a>
+          </div>
+
+        </div>
+      </div>
+      <% }) %>
+
+        <% } else { %>
+          <p class="no">No posts yet</p>
+          <% } %>
+
+
+</body>
+
+</html>
