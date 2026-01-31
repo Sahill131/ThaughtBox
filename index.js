@@ -70,10 +70,10 @@ app.post('/create', async (req, res) => {
 
 
 
-app.post('/in', async (req, res) => {
+app.post('/login', async (req, res) => {
   let { email, password } = req.body
 
-  let user = await usermodel.findOne({ email })
+  let user = await usermodel.findOne({ email,password })
   if (!user) return res.status(500).send("something went wrong")
 
 
